@@ -1,0 +1,123 @@
+{
+  "sduijson": {
+    "pages": [
+      {
+        "components": [
+          {
+            "slides": [
+              {
+                "caption": "Discover the Latest Products amazing",
+                "image": "gs://server-driven-ui-36c75.appspot.com/chaussure-de-randonnee-666kll.jpg"
+              },
+              {
+                "caption": "Special Offers Every Week",
+                "image": "gs://server-driven-ui-36c75.appspot.com/HP5845_Y6J_Q1.webp"
+              },
+              {
+                "caption": "Fast and Secure Checkout",
+                "image": "gs://server-driven-ui-36c75.appspot.com/8ebb.jpg"
+              }
+            ],
+            "style": {
+              "height": 300
+            },
+            "type": "carousel"
+          },
+          {
+            "action": "navigateToList",
+            "style": {
+              "backgroundColor": "#007bff",
+              "color": "#fff",
+              "marginLeft": "10%",
+              "marginTop": 20,
+              "width": "80%"
+            },
+            "text": "View Products",
+            "type": "button"
+          }
+        ],
+        "name": "Home"
+      },
+      {
+        "components": [
+          {
+            "style": {
+              "color": "#333",
+              "fontSize": 24,
+              "fontWeight": "bold"
+            },
+            "text": "Product List",
+            "type": "text"
+          },
+          {
+            "data": [
+              {
+                "id": 1,
+                "image": "gs://your-firebase-bucket/phone.jpg",
+                "name": "Mobile Phone",
+                "price": 299.99
+              },
+              {
+                "id": 2,
+                "image": "gs://your-firebase-bucket/laptop.jpg",
+                "name": "Laptop",
+                "price": 999.99
+              },
+              {
+                "id": 3,
+                "image": "gs://your-firebase-bucket/tablet.jpg",
+                "name": "Tablet",
+                "price": 199.99
+              }
+            ],
+            "type": "product-list"
+          }
+        ],
+        "name": "Product List"
+      },
+      {
+        "components": [
+          {
+            "source": "{productImage}",
+            "style": {
+              "height": 200,
+              "width": "100%"
+            },
+            "type": "image"
+          },
+          {
+            "style": {
+              "color": "#333",
+              "fontSize": 20,
+              "fontWeight": "bold"
+            },
+            "text": "{productName}",
+            "type": "text"
+          },
+          {
+            "style": {
+              "color": "#777",
+              "fontSize": 16
+            },
+            "text": "Price: {productPrice} €",
+            "type": "text"
+          },
+          {
+            "action": "addToCart",
+            "style": {
+              "backgroundColor": "#007bff",
+              "color": "#fff",
+              "marginTop": 20
+            },
+            "text": "Add to Cart",
+            "type": "button"
+          }
+        ],
+        "name": "Product Detail"
+      }
+    ],
+    "theme": "light",
+    "title": "My Online Store",
+    "version": "1.1"
+  }
+}
